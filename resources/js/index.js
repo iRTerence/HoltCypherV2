@@ -16,6 +16,7 @@ $('#tabs-nav a').click(function(){
 
 
 
+
 const ctx = document.getElementById('homeChart');
 var option = {        
   percentageInnerCutout: 60
@@ -34,16 +35,7 @@ const data = {
 
   offset: 5 
 };
-new Chart(ctx, {
-  type: 'doughnut',
-  data: data,
-  options: {
-    cutout: 80, 
-    borderWidth: 0, /* change this */
-  }
-  
-});
- 
+
 
 // window.onload = function onLoad() {
 //   var percentageComplete = 0.6;
@@ -68,3 +60,17 @@ toggleNavButton.click(function(){
 
 })
 
+
+setTimeout(() => {
+  $('.landing-body').show()
+  $('.dashboard-loader').hide()
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: data,
+    options: {
+      cutout: 80, 
+      borderWidth: 0, /* change this */
+    }
+    
+  });
+}, "2000")

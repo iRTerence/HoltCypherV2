@@ -15,6 +15,21 @@
     src: url("../fonts/AvenirNextLTPro-Bold.otf") format("opentype");
 } 
 
+/* Spinner */
+
+.rotate {
+    animation: rotation 2s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
 body {
     font-family: 'AvenirNext' !important;
     /* font-family: 'Open Sans', sans-serif !important;
@@ -333,9 +348,16 @@ button:focus {
 }
 
 /* Landing Page */
+.dashboard-loader{
+    width: 100px;
+    margin: auto;
+    margin-top:50%;   
+}
+
 .landing-body{
     overflow-y: auto;
     padding-bottom: 105px;
+    display: none; 
 } 
 
 .base-body{
