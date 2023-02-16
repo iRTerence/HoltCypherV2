@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {
     font-family: 'Avenir Next'; 
     font-weight: normal;
@@ -52,11 +53,54 @@ div {
     margin: auto; 
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+}
+
 /* Header */
 .header{
     padding-top: 10px;  
     background:white; 
 
+}
+
+.header-img{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 700;  
+    font-size: 18px;  
+    line-height: 30px;
+    letter-spacing: -0.4px;
+    color: #113650;
+}
+
+.dropdown-item{
+    font-weight: 600 !important;
+    font-size: 14px;  
+}
+
+.dropdown-toggle{
+    margin-right: 14px;
+}
+
+
+.display-header{
+    align-items: center;
+    margin-right: 0 !important;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.help-header{
+    text-align: end;
+    padding-right:37px !important;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1E3D58;
 }
 
 .header-text{
@@ -70,6 +114,16 @@ div {
     /* identical to box height, or 167% */
 
     letter-spacing: -0.4px;
+}
+
+/* Navbar */
+.backbtn{
+    padding-left: 43px !important;
+}
+
+/* Remove Outline on button press for Bootstrap */
+.navbar-toggler:focus {
+    box-shadow: none !important;
 }
 
 /* Index Page */
@@ -212,10 +266,12 @@ div {
 }
 
 .login-form input{
+    font-family: 'Avenir Next';
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     /* or 144% */
+    padding-left: 15px; 
 
     display: flex;
     align-items: center;
@@ -276,6 +332,591 @@ div {
     margin-top: 15px; 
 }
 
+/* Landing Page */
+.landing-body{
+    overflow-y: auto;
+    padding-bottom: 105px;
+} 
+
+.base-body{
+    overflow-y: auto;
+    padding-bottom: 105px;
+}
+
+.chart-container{
+    height: 200px;
+
+  }
+.chart-sizing{
+    height:200px; 
+}
+
+  #acountChart {
+    margin: auto; 
+  }
+
+.chart-text{
+    position: relative;
+    margin-top: -120px; 
+}
+
+.chart-percent{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;    
+    text-align: center;
+    letter-spacing: -0.5px;
+    
+    color: #113650;
+
+}
+
+.chart-subheader{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;    
+    color: rgba(17, 54, 80);
+}
+
+#homeChart {
+    margin: auto; 
+}
+
+.landing-top{
+    height: 372px; 
+    background:white; 
+    box-shadow: 0px 7px 78px rgba(0, 0, 0, 0.05);
+    border-radius: 10px; 
+}
+
+.landing-top-header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #113650;
+    margin-top: 19px; 
+    margin-bottom: 45px; 
+    padding-top: 20px; 
+} 
+
+.chart-legend{
+    padding-top:90px;   
+}
+
+.legend-color{
+    background: #5EDBD5;
+    height: 14px;
+    width:14px;  
+    border-radius: 50%;
+    margin-right: 11px;    
+}
+
+.legend-color-cad{
+    background: #113650;
+    height: 14px;
+    width:14px;  
+    border-radius: 50%;
+    margin-right: 11px; 
+}
+
+.legend-container{
+    height: 43px; 
+    width: 93px; 
+    background: #F3F1F7;
+    border-radius: 10px; 
+} 
+
+.legend-currency{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    color: rgba(17, 54, 80, 0.87);
+}
+
+
+.account-balance{
+    font-family: 'AvenirNextBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.99px;
+    line-height: 33px;
+    letter-spacing: -1px;
+    color: #5EDBD5;
+    padding-left: 21px; 
+}
+
+.account-number{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    color: rgba(17, 54, 80, 0.7);  
+    padding-left: 21px; 
+ 
+}
+
+.account-arrow{
+    padding-right: 26px; 
+}
+
+
+.banking-summary-header{
+    padding-top: 19px; 
+    padding-bottom: 16px; 
+}
+ 
+.fund-account-btn{
+    /* height: 48px;  */
+    /* padding-top: 15px;  */
+
+}
+
+.fund-account-btn button{
+    margin-top: 15px; 
+    height: 48px;
+    width: 100%;
+    border: none;   
+    background: #5EDBD5;
+    border-radius: 10px; 
+    font-family: 'AvenirNextBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px; 
+    letter-spacing: -0.5px;
+    color: #113650;
+} 
+
+
+/* Card Services */
+
+.page-header-image{
+    padding-top: 27px; 
+    margin: auto; 
+    height: 247px;
+    width: 236px;  
+} 
+
+.page-header-image img{
+    width: 100%; 
+}
+
+.cardservices-body{
+    background: #FFFFFF;    
+    box-shadow: 0px 7px 78px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.cardservices-body-header{
+    font-family: 'AvenirNextBold'; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.99px;
+    line-height: 33px;
+    letter-spacing: -1px;    
+    color: #113650;
+    padding-top: 28px; 
+}
+
+.cardservices-body-description{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    letter-spacing: -0.4px;
+    /* Typography/Black/87% */
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.card-services-fundcard-btn button{
+    border: none; 
+    font-family: 'AvenirNextBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #113650;
+    height: 58px; 
+    width: 100%; 
+    background: #5EDBD5;    
+    border-radius: 10px;
+    margin-bottom: 13px;
+    margin-top: 13px;  
+}
+
+.card-services-viewdetail-btn button{
+    border: 1px solid #00CCC3;
+    font-family: 'AvenirNextBold';
+    font-style: normal;
+    font-weight: 700; 
+    font-size: 18px;
+    line-height: 26px;
+    color: #113650;
+    height: 58px; 
+    width: 100%; 
+    background: white;     
+    border-radius: 10px;
+    margin-bottom: 13px; 
+    margin-bottom: 28px;
+} 
+
+.visit-portal{
+    padding-top: 10px; 
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    text-decoration-line: underline;
+    color: #00CCC3; 
+}
+
+
+
+
+/* Crypto */
+
+.page-header-image{
+    padding-top: 27px; 
+    margin: auto; 
+    height: 247px;
+    width: 236px;  
+} 
+
+.page-header-image img{
+    width: 100%; 
+}
+
+.crypto-body{
+    background: #FFFFFF;    
+    box-shadow: 0px 7px 78px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.crypto-body-header{
+    font-family: 'AvenirNextBold'; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.99px;
+    line-height: 33px; 
+    letter-spacing: -1px;    
+    color: #113650;
+    padding-top: 28px; 
+}
+
+.crypto-body-description{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    letter-spacing: -0.4px;
+    /* Typography/Black/87% */
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.crypto-fundcard-btn button{
+    border: none; 
+    font-family: 'AvenirNextBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #113650;
+    height: 58px; 
+    width: 100%; 
+    background: #5EDBD5;    
+    border-radius: 10px;
+    margin-bottom: 28px;
+    margin-top: 13px;   
+}
+
+.crypto-viewdetail-btn button{
+    border: 1px solid #00CCC3;
+    font-family: 'AvenirNextBold';
+    font-style: normal;
+    font-weight: 700; 
+    font-size: 18px;
+    line-height: 26px;
+    color: #113650;
+    height: 58px; 
+    width: 100%; 
+    background: white;     
+    border-radius: 10px;
+    margin-bottom: 13px; 
+    margin-bottom: 28px;
+} 
+
+.visit-portal{
+    padding-top: 10px; 
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    text-decoration-line: underline;
+    color: #00CCC3; 
+} 
+
+
+/* Profile Page */
+
+.profile-image-header{
+    height: 109px;
+    width: 109px; 
+    margin-top: 25px;  
+}
+
+.profile-image-header img{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;    
+}
+
+.profile-username{
+    margin-top: 14px; 
+    font-family: 'AvenirNextBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.99px;
+    line-height: 33px;
+    letter-spacing: -1px;
+    color: #113650;
+}
+
+.profile-email{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.4px;    
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.account-headers{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    color: #113650;
+    margin-top: 36px; 
+    margin-bottom: 14px; 
+}
+
+.account-options-body{
+    background: #FFFFFF;
+    box-shadow: 0px 7px 78px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.active-footer-nav{ 
+    border-top: 3px solid #113650;
+}
+
+.nav{
+    background: white;
+
+
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(100%) !important; 
+}
+
+.offcanvas-collapse{
+    right: 100% !important;
+}
+
+.offcanvas-start{
+    left: 0;
+    right:0;
+    transform:translateX(-100%); 
+    border: none !important; 
+    width: 70% !important; 
+    top: 70px !important; 
+    bottom: 85px !important;     
+  
+} 
+ 
+.offcanvas-backdrop{
+    z-index: 0 !important; 
+}  
+
+.navbar {
+    height: 85px; 
+    width: 80%;
+    margin: auto;
+    padding: 0 !important;  
+}
+
+.nav-text{
+    font-size: 11px;
+    font-family: 'Avenir Next';
+    color: rgba(0, 0, 0, 0.6);}
+
+
+.active-nav{
+    color: #113650;
+}
+
+.navmenu-option{
+    margin-top: 10px; 
+    padding: 14px 0px 15px 9px;
+}
+
+.navmenu-option-active{
+    background-color: #00CEC6; 
+    border-radius: 5px; 
+
+}
+
+.navmenu-option-text{
+    font-family: 'Avenir Next';
+    padding-left: 15px; 
+    font-weight: 500;
+    font-size: 16.0412px;
+    color: #00324E;
+}
+
+.navmenu-image{
+    width: 23px;
+} 
+
+.navmenu-image img{
+    max-width: 100%; 
+} 
+
+.offcanvas-end {
+}
+
+.modal-backdrop{
+    top: 123px !important; 
+}
+
+.navmenu-container a {
+    text-decoration: none; 
+}
+
+
+.offcanvas-backdrop {
+    pointer-events: none !important;
+  }
+
+  .corner-pfp img{
+    width: 20px;
+    height: 20px; 
+  }
+ 
+  .dropdown-toggle{
+    margin-right: 10px;
+  }
+
+  .dropdown-item{
+    font-weight: 600 !important;
+    font-size: 14px;  
+  }
+
+  .modal-content{
+    height: 80%;  
+  }
+
+
+.active-nav-img{
+    /* filter: invert(16%) sepia(9%) saturate(5337%) hue-rotate(167deg) brightness(95%) contrast(92%); */
+
+}
+
+.dispaly{
+    height: 100%; 
+    display:flex;
+    align-items: center;
+}
+
+.black-stroke{
+    stroke: yellow; 
+}
+
+.banking-summary-header{
+    font-family: 'Montserrat';
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    color: #113650; 
+}
+
+.account-information{
+    background: white; 
+    height: 55px;   
+    border-radius: 8px !important; 
+    border-bottom:  1px solid #E5E9F2;;
+
+}
+
+.account-container{
+    background: #FFFFFF;
+    box-shadow: 0px 5px 18px -3px rgba(0, 0, 0, 0.08), 0px 5px 15px -3px rgba(0, 0, 0, 0.05);
+    border-radius: 8px !important;
+}
+
+.account-option-text{
+    font-family: 'AvenirNextBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    color: #002A43;
+    padding-left: 21px; 
+}
+
 
   /* These changes are for mobile changes */
 /* Iphone SE 370px screens */
@@ -285,6 +926,10 @@ div {
 
         margin-bottom: 15px;  
         margin-top: 15px;   
+    }
+
+    .tokenized-images img{
+        width:100%; 
     }
 
   }

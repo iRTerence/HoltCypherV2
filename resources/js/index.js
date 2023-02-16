@@ -1,5 +1,3 @@
-
-
 // Show the first tab and hide the rest
 $('#tabs-nav a:first-child').addClass('active');
 $('.tab-content').hide();
@@ -24,7 +22,7 @@ var option = {
 };
 const data = {
   datasets: [{
-    data: [300, 50, 100, 250],
+    data: [300, 150,],
     backgroundColor: [
       '#14d0ca',
       '#1e3d58',
@@ -40,9 +38,10 @@ new Chart(ctx, {
   type: 'doughnut',
   data: data,
   options: {
-    cutout: 65  
-
+    cutout: 80, 
+    borderWidth: 0, /* change this */
   }
+  
 });
  
 
@@ -63,7 +62,7 @@ toggleNavButton.click(function(){
   if(menuOpen === true){
     toggleNavButton.attr('src','resources/images/navbar-activemenu.png');
   } else {
-    toggleNavButton.attr('src','resources/images/menu-icon.png');
+    toggleNavButton.attr('src','resources/images/menu-icon.svg');
 
   }
 

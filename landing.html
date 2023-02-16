@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Cypher</title>
+</head>
+    <body class="">
+        <!-- Header -->
+
+        <div class="display-header row sticky-top fixed-top">
+            <div class="box col-4 backbtn">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <img id="navbar-menu-icon" src="resources/images/menu-icon.svg"></img>
+                </button>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <img id="navbar-menu-icon" src="resources/images/game-icons_hamburger-menu.svg">
+                </button> -->
+            </div>
+            <div class="col-4 header-img text-center"> 
+                Cypher OTC
+            </div>
+            <div class="corner-pfp col-4 help-header d-flex justify-content-end align-items-end"> 
+                <div class="dropdown">
+                        <img class="dropdown-toggle" src="resources/images/Header-Earth (1).svg" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ul id="langoptions" class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton1"> <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#" style="color:#ece9e9;">French</a></li>
+                    <li><a class="dropdown-item" href="#" style="color:#ece9e9;">Spanish</a></li></ul>
+                </div>
+                <img id="navuserprofile" src="resources/images/Profile Icon Header.svg">
+            </div>
+        </div>
+        <div class="landing-body">
+            <div class="landing-top w90">  
+                <div class="landing-top-header text-center">
+                    Total Assets
+                </div>
+                <div class="chart-container">
+                    <div class="chart-sizing">
+                        <canvas id="homeChart"></canvas>
+
+                    </div>
+                </div>
+                <div class="chart-text text-center">
+                    <div class="chart-percent">
+                        $31154.56
+                    </div>
+                    <div class="chart-subheader">
+                        Total Assets (USD)
+                    </div>
+                </div>
+                <div class="chart-legend d-flex w80 justify-content-around">  
+                    <div class="legend-container d-flex justify-content-center"> 
+                        <div class="d-flex align-items-center"> 
+                            <div class="legend-color"> 
+ 
+                            </div>
+                            <div class="legend-currency"> 
+                                USD
+                            </div>
+                        </div>
+                    </div>
+                    <div class="legend-container d-flex justify-content-center"> 
+                        <div class="d-flex align-items-center"> 
+                            <div class="legend-color-cad"> 
+ 
+                            </div> 
+                            <div class="legend-currency"> 
+                                CAD
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="banking-accounts-container w90">
+                <div class="banking-summary-header">
+                    Banking Summary
+                </div>
+                <div class="account-container">
+                    <div class="account-information d-flex justify-content-between align-items-center"> 
+                        <div class="account-information-left ">
+                            <div class="account-balance">
+                                $12,150.32
+                            </div>
+                            <div class="account-number">
+                                XXXXX (USD) 
+                            </div>
+                        </div>
+                        <div class="account-information-right">
+                            <div class="account-arrow">
+                                <img src="resources/images/arrow-right.svg">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="account-information d-flex justify-content-between align-items-center"> 
+                        <div class="account-information-left">
+                            <div class="account-balance">
+                                $12,150.32
+                            </div>
+                            <div class="account-number">
+                                XXXXX (USD) 
+                            </div>
+                        </div>
+                        <div class="account-information-right">
+                            <div class="account-arrow">
+                                <img src="resources/images/arrow-right.svg">
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <div class="fund-account-btn  text-center">
+                <button class="w90">  
+                    Fund Account
+                </button>
+            </div>
+            
+
+            
+        </div>
+
+        <!-- Fixed Bottom -->
+        <div>
+            <nav class="">
+                <div class="container-fluid">
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-hidden="true" >
+                        <div class="offcanvas-body">
+                            <div class="navmenu-container">
+                                <a href="#">
+                                    <div class="navmenu-option d-flex navmenu-option-active">
+                                        <div class="navmenu-image">
+                                            <img src="resources/images/navbar-dashboard.png">
+                                        </div> 
+                                        <div class="navmenu-option-text">
+                                            Dashboard 
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+
+                                </a>
+                                <div class="navmenu-option d-flex">
+                                    <div class="navmenu-image">
+                                        <img src="resources/images/navbar-banking.png">
+                                    </div> 
+                                    <div class="navmenu-option-text">
+                                        Banking 
+                                    </div>
+                                </div>
+                                <a href="#">
+
+                                </a>
+                                <div class="navmenu-option d-flex">
+                                    <div class="navmenu-image">
+                                        <img src="resources/images/navbar-cardservices.png">
+                                    </div> 
+                                    <div class="navmenu-option-text">
+                                        Card Services 
+                                    </div>
+                                </div>
+                                <a href="#">
+
+                                </a>
+                                <div class="navmenu-option d-flex">
+                                    <div class="navmenu-image">
+                                        <img src="resources/images/navbar-cryptoexchange.png">
+                                    </div> 
+                                    <div class="navmenu-option-text">
+                                        Crypto Exchange 
+                                    </div>
+                                </div>
+                                <a href="#">
+
+                                </a>
+                                <div class="navmenu-option d-flex">
+                                    <div class="navmenu-image">
+                                        <img src="resources/images/navbar-cryptootc.png">
+                                    </div> 
+                                    <div class="navmenu-option-text">
+                                        Crypto OTC
+                                    </div>
+                                </div>
+                                <a href="#">
+
+                                </a>
+                                <div class="navmenu-option d-flex">
+                                    <div class="navmenu-image">
+                                        <img src="resources/images/navbar-investment.png">
+                                    </div> 
+                                    <div class="navmenu-option-text">
+                                        Investments
+                                    </div>
+                                </div>
+                                <a href="#">
+
+                                </a>
+                                <div class="navmenu-option d-flex">
+                                    <div class="navmenu-image">
+                                        <img src="resources/images/navbar-wealthmangement.png">
+                                    </div> 
+                                    <div class="navmenu-option-text">
+                                        Wealth Management
+                                    </div>
+                                </div>
+                                <a href="#">
+
+                                </a>
+                                <div class="navmenu-option d-flex">
+                                    <div class="navmenu-image">
+                                        <img src="resources/images/navbar-refferal.png">
+                                    </div> 
+                                    <div class="navmenu-option-text">
+                                        Referral (Coming Soon)
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </nav>
+        </div>
+
+
+        <div class="nav fixed-bottom">
+            <nav class="navbar  ">
+                <div class="dispaly text-center active-footer-nav">
+                    <div class="banking">
+                        <a href="landing.html"><img src="resources/images/Dollar-on.svg" class="active-nav-img"></img></a>
+                        <div class="nav-text active-nav">
+                            Banking
+                        </div>
+                    </div> 
+ 
+                </div>
+                <div class="dispaly text-center">
+                    <div class="card-services-icon">
+                        <img src="resources/images/card-off.svg"></img> 
+                        <div class="nav-text " >
+                            Card Services
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dispaly text-center">
+                    <div class="crypto-otc">
+                        <img src="resources/images/crypto-off@2x.svg"></img>
+                        <div class="nav-text "> 
+                            Crypto OTC
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="resources/js/index.js"></script>
+    </body>
+</html>
