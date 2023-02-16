@@ -754,7 +754,9 @@ button:focus {
 
 
 
-
+.dispaly a {
+    text-decoration: none;
+}
 
 
 
